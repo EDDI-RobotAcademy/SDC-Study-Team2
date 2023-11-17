@@ -12,15 +12,13 @@ post_model *init_post_model_object(void)
     return tmp_post;
 }
 
-post_model *put_data_into_post_model(post_model *test_post, unsigned int number, char *title, char *writter, char *contents)
+post_model *put_data_into_post_model(post_model *test_post, char* char_info)
 {
     // 이런 식으로 작성하면 안됨
     // 동적 할당을 해야만 저장 공간을 변형하기 용이하게 함
-    test_post->unique_id = number;
-    test_post->title = title;
-    test_post->writter = writter;
-    test_post->contents = contents;
-
+    int char_info_length = strlen(char_info) + 1;
+    test_post->title = (char*)malloc(sizeof(char) * char_info_length);
+    strncpy(test_post->title,char_info,char_info_length);
     return test_post;
 }
 
