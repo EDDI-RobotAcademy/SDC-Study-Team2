@@ -23,6 +23,8 @@ enable_testing()
 
 file(GLOB C_SOURCES
 	"sample/*.c"
+    "adaptor/in/api/request/*.c"
+    "utility/ui/console/*.c"
 )
 
 file(GLOB CPP_TEST_SOURCES
