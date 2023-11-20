@@ -9,7 +9,6 @@
 void post_menu_service(void)
 {
     char number_input[MAX_NUMBER_KEYBOARD_INPUT] = { 0 };
-    char list_num[6] = "012345"; 
     int i, select_num;
     printf("    0. 게시글 목록 보기\n\
     1. 게시글 내용 보기\n\
@@ -18,10 +17,14 @@ void post_menu_service(void)
     4. 게시글 삭제 하기\n\
     5. 종료\n");
 
-    get_number_keyboard_input(number_input);
 
-    printf("%s번을 선택하셨습니다.", number_input);
-            
+    get_number_keyboard_input(number_input);
+    select_num = *number_input - '0';
+
     
+    printf("%d번을 선택하셨습니다.", select_num);
+    
+    // board_service_command_table[select_num]();
+
 
 }
