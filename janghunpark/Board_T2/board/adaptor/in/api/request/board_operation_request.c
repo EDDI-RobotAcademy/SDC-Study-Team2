@@ -2,7 +2,7 @@
 #include <string.h>
 
 #include "board_operation_request.h"
-#include "../../../../../utility/ui/console/user_keyboard_input.h"
+#include "../../../../utility/ui/console/user_keyboard_input.h"
 
 // 데이터를 게시글 형태로 setting하는 것
 
@@ -13,9 +13,15 @@ post_info *init_post_info_by_write_command(void)
 {
     // 이 부분은 사용자로부터 입력 받거나 해야 함
     char *keyboard_input_from_user;
-    char *title_from_keyboard = get_user_keyboard_input(keyboard_input_from_user);
-    char *writer_from_keyboard = get_user_keyboard_input(keyboard_input_from_user);
-    char *contents_from_keyboard = get_user_keyboard_input(keyboard_input_from_user);
+    printf("제목을 입력하세요.\n");
+    get_user_keyboard_input(keyboard_input_from_user);
+    char *title_from_keyboard = keyboard_input_from_user;
+    printf("작성자를 입력하세요.\n");
+    get_user_keyboard_input(keyboard_input_from_user);
+    char *writer_from_keyboard = keyboard_input_from_user;
+    printf("내용을 입력하세요.\n");
+    get_user_keyboard_input(keyboard_input_from_user);
+    char *contents_from_keyboard = keyboard_input_from_user;
 
     post_info *tmp_post_info = (post_info *)malloc(sizeof(post_info));
     post_formation_by_request(tmp_post_info, title_from_keyboard, writer_from_keyboard, contents_from_keyboard);
