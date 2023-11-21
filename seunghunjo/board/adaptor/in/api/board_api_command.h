@@ -4,6 +4,7 @@
 enum board_api_command
 {
     BOARD_API_OPERATION,
+    BOARD_API_OPERATION_REQUEST,
     BOARD_API_END
 };
 
