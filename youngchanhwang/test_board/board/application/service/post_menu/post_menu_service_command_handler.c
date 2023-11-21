@@ -2,9 +2,11 @@
 #include "../../../utility/input_data.h"
 
 #include "../../../adapter/out/board_in_memory_command.h"
-#include "../../../adapter/out/in_memory/listup_in_memory_command_handler.h"
+#include "../../../adapter/out/in_memory/listup/listup_in_memory_command_handler.h"
 #include "../../../adapter/out/board_in_memory_command_table.h"
 
+#include "../board_service_command.h"
+#include "../board_service_command_table.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -45,7 +47,7 @@ void post_menu_service(void)
     printf("%d번을 선택하셨습니다.\n", select_num);
 
 
-    // board_service_command_table[select_num]();
+    board_service_command_table[select_num]();
 
 
 }

@@ -20,12 +20,15 @@ board_model *init_board_model_object(char *title, char *author, char *content)
     int content_length = strlen(content) +1;
 
     tmp_board->unique_id = increment_test_form_unique_id();
+    
     tmp_board->title =
         (char *)malloc(sizeof(char) * title_length);
     strncpy(tmp_board->title , title , title_length);
+
     tmp_board->author = 
         (char *)malloc(sizeof(char) * author_length);
     strncpy(tmp_board->author,author,author_length);
+
     tmp_board->content = 
         (char *)malloc(sizeof(char) * content_length);
     strncpy(tmp_board->content,content,content_length);

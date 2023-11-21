@@ -5,6 +5,7 @@ enum board_service_command
 {
     
     POST_MENU_SERVICE_ON_BOARD_EXECUTE,
+    POST_WRITE_SERVICE_ON_BOARD_EXECUTE,
     SERVICE_ON_BOARD_END
 };
 
