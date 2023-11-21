@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include "adaptor/in/api/request/board_operation_request.h"
-#include "utility/ui/console/user_keyboard_input.h"
 #include "utility/ui/console/first_screen_input.h"
 
 

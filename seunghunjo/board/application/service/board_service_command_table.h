@@ -5,6 +5,8 @@
 
 typedef void (* board_service_call_ptr_t) (void);
 
+void just_dummy(void);
+
 extern const board_service_call_ptr_t 
     board_service_command_table[SERVICE_ON_BOARD_EXECUTE_BUFFER_COUNT];
 
