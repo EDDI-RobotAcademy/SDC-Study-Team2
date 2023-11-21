@@ -27,7 +27,7 @@ post_info *init_post_info_by_write_command(void)
     printf("내용을 입력하세요.\n");
     get_user_keyboard_input(keyboard_input_from_user);
     post_info_contents_from_request(tmp_post_info, keyboard_input_from_user);
-    
+
     return tmp_post_info;
 }
 
