@@ -1,0 +1,14 @@
+#ifndef __BOARD_SERVICE_COMMAND_H__
+#define __BOARD_SERVICE_COMMAND_H__
+
+enum board_service_command
+{
+    
+    POST_MENU_SERVICE_ON_BOARD_EXECUTE,
+    SERVICE_ON_BOARD_END
+};
+
+#define SERVICE_ON_BOARD_EXECUTE_BUFFER_COUNT         (SERVICE_ON_BOARD_END)
+#define SERVICE_ON_BOARD_EXECUTE_BUFFER               ((SERVICE_ON_BOARD_END) - 1)
+
+#endif
