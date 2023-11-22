@@ -1,4 +1,20 @@
-id:0,title:제목2,author:작성자2,content:내내용2,
-id:0,title:제목3,author:작성자3,content:내용3,
-id:0,title:1,author:2,content:3,
-id:1,title:4,author:5,content:6,
+for i = 0 i 카운트까지 
+for j = 0 4개씩
+리드
+id:0,title:일
+,author:이
+,content:삼
+,
+
+id:0,title:1
+,author:2
+,content:3
+,
+id:1,title:4
+,author:5
+,content:6
+,
+id:0,title:한
+,author:번더
+,content:나에
+,
