@@ -1,6 +1,8 @@
-#include <stdio.h>
-#include "board_service_command.h"
 #include "board_service_command_table.h"
+#include "post_write/post_write_service_command_handler.h"
+
+
+#include <stdio.h>
 
 void just_dummy(void)
 {
