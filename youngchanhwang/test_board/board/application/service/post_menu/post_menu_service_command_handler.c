@@ -32,7 +32,7 @@ void post_menu_service(void)
         printf("%s\n" ,post_menu_list[i]);
     }
 
-    board_in_memory_command_table[0]();
+    board_in_memory_command_table[BOARD_IN_MEMORY_LISTUP]();
 
     get_number_keyboard_input(number_input);
     select_num = *number_input - '0';

@@ -9,6 +9,6 @@ void board_operation(void)
 {
     printf("operation\n");
 
-    board_service_command_table[0]();
+    board_service_command_table[POST_MENU_SERVICE_ON_BOARD_EXECUTE]();
 
 }
