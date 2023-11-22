@@ -35,8 +35,9 @@ file(GLOB C_SOURCES
     "adapter/in/api/*.c"
     "adapter/in/api/operation/*.c"
     "adapter/in/api/request/*.c"
-    "adapter/out/in_memory/*.c"
     "adapter/out/*.c"
+    "adapter/out/in_memory/*.c"
+    "adapter/out/in_memory/listup/*.c"
 )
 
 file(GLOB CPP_TEST_SOURCES

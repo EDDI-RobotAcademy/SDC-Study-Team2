@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "board_in_memory_command.h"
-#include "in_memory/listup_in_memory_command_handler.h"
+#include "in_memory/listup/listup_in_memory_command_handler.h"
 #include "board_in_memory_command_table.h"
 
 

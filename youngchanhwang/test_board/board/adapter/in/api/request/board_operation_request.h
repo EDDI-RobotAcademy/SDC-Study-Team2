@@ -1,7 +1,0 @@
-#ifndef __BOARD_OPERATION_REQUEST_H__
-#define __BOARD_OPERATION_REQUEST_H__
-
-
-
-
-#endif
