@@ -7,7 +7,7 @@ enum board_api_command
     BOARD_API_END
 };
 
-#define BOARD_CALL_BUFFER_COUNT       (BOARD_API_END)
-#define BOARD_CALL_BUFFER             ((BOARD_API_END) - 1)
+#define BOARD_API_BUFFER_COUNT         (BOARD_API_END)
+#define BOARD_API_BUFFER               ((BOARD_API_END) - 1)
 
 #endif

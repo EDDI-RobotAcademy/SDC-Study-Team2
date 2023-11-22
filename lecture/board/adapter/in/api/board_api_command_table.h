@@ -5,9 +5,9 @@
 
 typedef void (* board_api_call_ptr_t) (void);
 
-void not_implemented (void);
+void not_implemented(void);
 
 extern const board_api_call_ptr_t \
-    board_api_command_table[BOARD_CALL_BUFFER_COUNT];
+    board_api_command_table[BOARD_API_BUFFER_COUNT];
 
 #endif
