@@ -1,8 +1,10 @@
 #ifndef __BOARD_SERVICE_COMMAND_H__
 #define __BOARD_SERVICE_COMMAND_H__
 
-enum service_on_board_command
+enum board_service_command
 {
+    
+    POST_MENU_SERVICE_ON_BOARD_EXECUTE,
     POST_WRITE_SERVICE_ON_BOARD_EXECUTE,
     SERVICE_ON_BOARD_END
 };

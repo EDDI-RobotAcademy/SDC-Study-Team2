@@ -22,11 +22,22 @@ endif()
 enable_testing()
 
 file(GLOB C_SOURCES
-    "application/service/*.c"
-    "application/service/post_write/*.c"
 	"sample/*.c"
-    "utility/ui/console/*.c"
     "domain/model/*.c"
+    "utility/*.c"
+    "application/service/*.c"
+    "application/service/post_menu/*.c"
+    "application/service/post_listup/*.c"
+    "application/service/post_delete/*.c"
+    "application/service/post_edit/*.c"
+    "application/service/post_write/*.c"
+    "application/service/post_read/*.c"
+    "adapter/in/api/*.c"
+    "adapter/in/api/operation/*.c"
+    "adapter/in/api/request/*.c"
+    "adapter/out/*.c"
+    "adapter/out/in_memory/*.c"
+    "adapter/out/in_memory/listup/*.c"
 )
 
 file(GLOB CPP_TEST_SOURCES

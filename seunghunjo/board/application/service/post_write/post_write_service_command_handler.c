@@ -1,13 +1,16 @@
 #include "post_write_service_command_handler.h"
-
-// #include "../../../adaptor/in/api/board_api_command.h"
-// #include "../../../adaptor/in/api/board_api_command_table.h"
-
+#include "../../../utility/input_data.h"
+#include "../../../domain/model/board_model.h"
+#include "../../../adapter/in/api/request/board_write_request.h"
 
 #include <stdio.h>
 
-void post_write_handler(void)
+
+void post_write_service(void)
 {
-    printf("지금 실행이 됩니다.");
-    //board_api_command_table[BOARD_API_REQUEST]();
+    board_model *post_write_request;
+    *post_write_request = write_request();
+
+    printf("%d\n%s%s%s\n",post_write_request->unique_id, post_write_request->title, post_write_request->author, post_write_request->content);
+    
 }
