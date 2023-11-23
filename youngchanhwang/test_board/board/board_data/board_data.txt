@@ -1,20 +1,4 @@
-for i = 0 i 카운트까지 
-for j = 0 4개씩
-리드
-id:0,title:일
-,author:이
-,content:삼
-,
-
-id:0,title:1
-,author:2
-,content:3
-,
-id:1,title:4
-,author:5
-,content:6
-,
-id:0,title:한
-,author:번더
-,content:나에
-,
+id:0,title:첫번째글,author:나,content:내용은,
+id:1,title:두번쨰,author:글,content:내용,
+id:2,title:세번째,author:글,content:잠,
+id:3,title:네번쨰,author:글,content:임,
