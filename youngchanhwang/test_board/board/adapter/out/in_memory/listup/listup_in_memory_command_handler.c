@@ -9,16 +9,14 @@
 
 void board_listup(void)
 {
-    test_form **test_list;
-    test_list = read_file_to_format();
+    read_board_data **post_list;
+    post_list = read_file_to_format();
     int i , j ;
     for(i = 0; i < test_form_unique_id ; i++)
     {
-        printf("%d. / 제목: %s / 작성자: %s / 내용: %s\n", test_list[i]->unique_id, test_list[i]->title,
-                                                            test_list[i]->author, test_list[i]->content);
+        printf("%d. / 제목: %s / 작성자: %s\n", post_list[i]->unique_id, post_list[i]->title,
+                                                            post_list[i]->author);
     }
     
-
-    printf("여기는 리스트 입니다. 일단.\n");
     
 }

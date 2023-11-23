@@ -3,9 +3,9 @@
 
 
 
-typedef struct _test_form test_form;
+typedef struct _read_board_data read_board_data;
 
-struct _test_form
+struct _read_board_data
 {
     int unique_id;
     char *title;
@@ -13,6 +13,6 @@ struct _test_form
     char *content;
 };
 
-test_form **read_file_to_format(void);
+read_board_data **read_file_to_format(void);
 
 #endif
