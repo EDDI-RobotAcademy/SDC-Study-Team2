@@ -15,9 +15,9 @@ board_model *init_board_model_object(char *title, char *author, char *content)
 {
     board_model *tmp_board = (board_model *)malloc(sizeof(board_model));
     // input에서 \n까지 포함된 문자열이 저장되어서 \n을 제거하기 위한 -1
-    int title_length = strlen(title);
-    int author_length = strlen(author);
-    int content_length = strlen(content);
+    int title_length = strlen(title) - 1;
+    int author_length = strlen(author) - 1;
+    int content_length = strlen(content) - 1;
 
     tmp_board->unique_id = increment_test_form_unique_id();
     
