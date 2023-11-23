@@ -25,16 +25,16 @@ int file_total_length (int file_descriptor)
     return lseek(file_descriptor, 0, SEEK_END);
 }
 
-test_form **init_test_form_array(int count)
+read_board_data **init_test_form_array(int count)
 {
-    test_form **tmp_format = (test_form **)malloc(sizeof(test_form *) * count);
+    read_board_data **tmp_format = (read_board_data **)malloc(sizeof(read_board_data *) * count);
 
     return tmp_format;
 }
 
-test_form *init_test_form_with_id(int id, char *title, char *author, char *content)
+read_board_data *init_test_form_with_id(int id, char *title, char *author, char *content)
 {
-    test_form *tmp_form = (test_form *)malloc(sizeof(test_form));
+    read_board_data *tmp_form = (read_board_data *)malloc(sizeof(read_board_data));
     int title_length = strlen(title) + 1;
     int author_length = strlen(author) + 1;
     int content_length = strlen(content) + 1;
@@ -71,8 +71,8 @@ int find_enter_line_for_format_count(char *buffer, int total_length)
     return count;
 }
 
-test_form **set_test_form_with_read_contents(
-    test_form **test_format_array, int object_count, char *read_contents)
+read_board_data **set_test_form_with_read_contents(
+    read_board_data **test_format_array, int object_count, char *read_contents)
 {
     int i;
     int field_count = 0;
@@ -154,13 +154,13 @@ test_form **set_test_form_with_read_contents(
 }
 
 
-test_form **read_file_to_format(void)
+read_board_data **read_file_to_format(void)
 {
     char read_contents[BUDDY_PAGE_SIZE] = { 0 };
     int object_count;
     int total_length;
 
-    test_form **test_format_array;
+    read_board_data **test_format_array;
 
     // O_RDONLY: 읽기 전용
     int created_file_descriptor = file_open(
