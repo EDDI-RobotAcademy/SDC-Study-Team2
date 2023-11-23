@@ -3,7 +3,7 @@
 
 #include "../../../../utility/save_in_text/read_data.h"
 
-test_form read_request(void);
+read_board_data read_request(void);
 
 
 
