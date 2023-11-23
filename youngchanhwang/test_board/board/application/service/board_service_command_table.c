@@ -2,6 +2,8 @@
 #include "board_service_command.h"
 #include "post_menu/post_menu_service_command_handler.h"
 #include "post_write/post_write_service_command_handler.h"
+#include "board_off/board_off_service_command_handler.h"
+#include "post_read/post_read_service_command_handler.h"
 #include "board_service_command_table.h"
 
 void just_dummy(void)
