@@ -47,9 +47,11 @@ bool write_data_in_file(board_model *format)
     // O_RDONLY : 읽기전용     read : descriptor -> buffer 
                         //   write: buffer -> descriptor
     int created_file_descriptor = file_open(
-        "/home/eddi/study_first/SDC-Study-Team2/"
-        "sanggun/test_board/board/board_data/board_data.txt", 
+        "/home/eddi/Desktop/SDC-Study-Team2/sanggun/"
+        "Board_T2/board/board_data/board_data.txt",
             O_CREAT | O_RDWR | O_APPEND, 0644);
+            
+        
 
     adjust_write_contents_from_format(write_contents, format);
 
