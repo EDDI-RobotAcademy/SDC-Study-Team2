@@ -6,9 +6,6 @@
 
 #define MAX_UNIQUE_ID                   4090
 
-
-read_board_data read_request(void);
-
 int read_request_unique_id(void);
 
 

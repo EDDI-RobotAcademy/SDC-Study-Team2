@@ -5,6 +5,7 @@
 #include "board_off/board_off_service_command_handler.h"
 #include "post_read/post_read_service_command_handler.h"
 #include "post_edit/post_edit_service_command_handler.h"
+#include "post_delete/post_delete_service_command_handler.h"
 #include "board_service_command_table.h"
 
 void just_dummy(void)

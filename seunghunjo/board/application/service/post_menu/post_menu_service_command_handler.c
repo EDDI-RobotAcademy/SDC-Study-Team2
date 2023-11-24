@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define MAX_MENU_NUM_SELECT            5
 #define MAX_MENU_NUM                   6
@@ -36,13 +37,13 @@ void post_menu_service(void)
 
 
     get_number_keyboard_input(number_input);
-    select_num = *number_input - '0';
+    select_num = atoi(number_input);
     i = select_num;
     while(i > MAX_MENU_NUM_SELECT)
     {
         printf("0 ~ 5 중에 선택 해주세요.\n");
         get_number_keyboard_input(number_input);
-        select_num = *number_input - '0';
+        select_num = atoi(number_input);
         i = select_num;
     }
     printf("%d번을 선택하셨습니다.\n", select_num);

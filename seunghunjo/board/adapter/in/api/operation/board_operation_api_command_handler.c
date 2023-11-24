@@ -8,7 +8,7 @@
 
 void board_operation(void)
 {
-    printf("operation\n");
+    printf("실행\n");
 
 
     board_service_command_table[POST_MENU_SERVICE_ON_BOARD_EXECUTE]();
