@@ -17,8 +17,8 @@ bool write_content_in_file(int file_descriptor, char *content)
     int content_length = strlen(content);
     int written_bytes = write(file_descriptor, content, content_length);
     
-    printf("written_byte = %d\n", written_bytes);
-    printf("content_length = %d\n", content_length);
+    // printf("written_byte = %d\n", written_bytes);
+    // printf("content_length = %d\n", content_length);
 
     if (written_bytes != content_length)
     {
@@ -34,7 +34,7 @@ void adjust_write_contents_from_format(char *contents, board_model *format)
 
     sprintf(contents, "id:%d,title:%s,author:%s,content:%s,\n", 
         format->unique_id, format->title, format->author, format->content);
-    printf("contents: %s\n", contents);
+    //printf("contents: %s\n", contents);
 }
 
 bool write_data_in_file(board_model *format)
@@ -63,7 +63,7 @@ void read_board_data_write_from_format(char *contents, read_board_data **format,
 {
     sprintf(contents, "id:%d,title:%s,author:%s,content:%s,\n", 
         format[i]->unique_id, format[i]->title, format[i]->author, format[i]->content);
-    printf("contents: %s\n", contents);
+    //printf("contents: %s\n", contents);
 
 }
 
