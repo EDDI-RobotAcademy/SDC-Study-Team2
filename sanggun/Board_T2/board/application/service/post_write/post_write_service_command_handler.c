@@ -17,7 +17,7 @@ void post_write_service(void)
     board_model *post_write_request;
     *post_write_request = write_request();
 
-    printf("%d\n%s%s%s\n",post_write_request->unique_id, post_write_request->title, post_write_request->author, post_write_request->content);
+    //printf("%d\n%s%s%s\n",post_write_request->unique_id, post_write_request->title, post_write_request->author, post_write_request->content);
     
     write_data_in_file(post_write_request);
 

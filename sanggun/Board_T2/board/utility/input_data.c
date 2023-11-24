@@ -35,3 +35,9 @@ void get_contents_keyboard_input(char *contents_keyboard_input)
     write(1, "내용을 입력하세요.\n", strlen("내용을 입력하세요.\n"));
     read(0, contents_keyboard_input, MAX_CONTENTS_KEYBOARD_INPUT);
 }
+
+void get_post_read_keyboard_input(char *post_read_keyboard_input)
+{
+    write(1, "유니크 숫자를 입력하세요\n", strlen("유니크 숫자를 입력하세요\n"));
+    read(0, post_read_keyboard_input, MAX_POST_READ_KEYBOARD_INPUT);
+}
