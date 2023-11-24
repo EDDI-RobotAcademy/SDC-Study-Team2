@@ -4,12 +4,6 @@
 #include "../../../../utility/input_data.h"
 #include <stdlib.h>
 
-
-read_board_data read_request(void)
-{
-        
-}
-
 int read_request_unique_id(void)
 {
     int tmp_unique_id;

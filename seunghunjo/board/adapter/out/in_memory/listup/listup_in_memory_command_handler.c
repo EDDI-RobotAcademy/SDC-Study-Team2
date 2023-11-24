@@ -14,8 +14,9 @@ void board_listup(void)
     int i , j ;
     for(i = 0; i < test_form_unique_id ; i++)
     {
-        printf("%d. / 제목: %s / 작성자: %s\n", post_list[i]->unique_id, post_list[i]->title,
+        printf("%-3d. / 제목: %-32s / 작성자: %-32s\n", post_list[i]->unique_id, post_list[i]->title,
                                                             post_list[i]->author);
     }
-        
+    
+    
 }
