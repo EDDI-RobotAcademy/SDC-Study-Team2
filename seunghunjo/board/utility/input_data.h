@@ -14,8 +14,6 @@ void get_title_keyboard_input(char *title_keyboard_input);
 void get_author_keyboard_input(char *author_keyboard_input);
 void get_contents_keyboard_input(char *contents_keyboard_input);
 
-
-
+void get_unique_id_keyboard_input(char* unique_id_keyboard_input);
 
 #endif
-

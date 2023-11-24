@@ -27,12 +27,13 @@ void post_menu_service(void)
     unsigned int i; 
     int select_num;
 
+    board_in_memory_command_table[BOARD_IN_MEMORY_LISTUP]();
+
     for(i = 0; i < MAX_MENU_NUM ; i ++)
     {
         printf("%s\n" ,post_menu_list[i]);
     }
 
-    board_in_memory_command_table[BOARD_IN_MEMORY_LISTUP]();
 
     get_number_keyboard_input(number_input);
     select_num = *number_input - '0';
