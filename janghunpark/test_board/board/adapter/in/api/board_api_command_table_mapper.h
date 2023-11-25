@@ -3,6 +3,7 @@
 
 #include "board_api_command.h"
 #include "operation/board_operation_api_command_handler.h"
+#include "board_api_command_table.h"
 
 #define __BOARD_API_COMMAND_TABLE(number, function_prototype) \
         [number] = function_prototype,

@@ -8,8 +8,8 @@
 
 bool write_content_in_file(int file_descriptor, char *content);
 void adjust_write_contents_from_format(char *contents, board_model *format);
-bool write_data_in_file(board_model *);
+void write_data_in_file(board_model *);
 void read_board_data_write_from_format(char *contents, read_board_data **format, int i);
-bool save_data_after_delete_in_file(read_board_data **post_list);
+void save_data_after_delete_in_file(read_board_data **post_list);
 
 #endif
