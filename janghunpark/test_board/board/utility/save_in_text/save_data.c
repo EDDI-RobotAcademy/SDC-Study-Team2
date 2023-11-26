@@ -38,7 +38,7 @@ void adjust_write_contents_from_format(char *contents, board_model *format)
     printf("contents: %s\n", contents);
 }
 
-bool write_data_in_file(board_model *format)
+void write_data_in_file(board_model *format)
 {
     char write_contents[BUDDY_PAGE_SIZE] = { 0 };
 
@@ -59,13 +59,15 @@ bool write_data_in_file(board_model *format)
     file_close(created_file_descriptor);
 }
 
+// read_board_data 형태의 구조체를 받아와 각 요소를 한 줄로 텍스트파일에 저장할 수 있는 형태로 전환
 void read_board_data_write_from_format(char *contents, read_board_data **format, int i)
 {
     sprintf(contents, "id:%d,title:%s,author:%s,content:%s,\n", 
         format[i]->unique_id, format[i]->title, format[i]->author, format[i]->content);
 }
 
-bool save_data_after_delete_in_file(read_board_data **post_list)
+// read_board_data 형태를 받아와 게시물 개수만큼 텍스트 파일로 저장
+void save_data_after_delete_in_file(read_board_data **post_list)
 {
     char contents[BUDDY_PAGE_SIZE] = { 0 };
     int i;
